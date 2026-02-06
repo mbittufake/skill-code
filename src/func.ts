@@ -3,14 +3,14 @@ import * as fs from 'node:fs';
 
 // Map common queries to skill file names
 const QUERY_EXPANSIONS: Record<string, string[]> = {
-    'website': ['html', 'css', 'javascript'],
-    'web': ['html', 'css', 'javascript'],
-    'webpage': ['html', 'css', 'javascript'],
-    'frontend': ['html', 'css', 'javascript'],
-    'ui': ['html', 'css', 'javascript'],
-    'ecommerce': ['html', 'css', 'javascript'],
-    'landing': ['html', 'css', 'javascript'],
-    'page': ['html', 'css', 'javascript'],
+    'website': ['html', 'css', 'javascript', 'design'],
+    'web': ['html', 'css', 'javascript', 'design'],
+    'webpage': ['html', 'css', 'javascript', 'design'],
+    'frontend': ['html', 'css', 'javascript', 'design'],
+    'ui': ['html', 'css', 'javascript', 'design'],
+    'ecommerce': ['html', 'css', 'javascript', 'design'],
+    'landing': ['html', 'css', 'javascript', 'design'],
+    'page': ['html', 'css', 'javascript', 'design'],
 };
 
 function skillFinder(query: string): string {
